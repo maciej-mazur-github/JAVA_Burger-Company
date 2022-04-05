@@ -45,25 +45,25 @@ public class Hamburger {
     }
 
     public double itemize() {
-        System.out.println("Hamburger " + name + " with " + meat + " on the bread roll " + breadRollType + " at the base price of " + price + " $");
+        System.out.println("\nHamburger " + name + " with " + meat + " on the bread roll " + breadRollType + " at the base price of " + price + " $");
 
-        if(!addition1Name.isEmpty()) {
-            System.out.println("Added " + addition1Name + " at the price of " + addition1Price);
+        if(addition1Name != null) {
+            System.out.println("With addition of " + addition1Name + " at the price of " + addition1Price);
             price += addition1Price;
         }
 
-        if(!addition2Name.isEmpty()) {
-            System.out.println("Added " + addition2Name + " at the price of " + addition2Price);
+        if(addition2Name != null) {
+            System.out.println("With addition of " + addition2Name + " at the price of " + addition2Price);
             price += addition2Price;
         }
 
-        if(!addition3Name.isEmpty()) {
-            System.out.println("Added " + addition3Name + " at the price of " + addition3Price);
+        if(addition3Name != null) {
+            System.out.println("With addition of  " + addition3Name + " at the price of " + addition3Price);
             price += addition3Price;
         }
 
-        if(!addition4Name.isEmpty()) {
-            System.out.println("Added " + addition4Name + " at the price of " + addition4Price);
+        if(addition4Name != null) {
+            System.out.println("With addition of  " + addition4Name + " at the price of " + addition4Price);
             price += addition4Price;
         }
 
